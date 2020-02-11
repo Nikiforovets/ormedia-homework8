@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>HW7</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
+</head>
+<body>
+    <div id="commonInfo">
+        <h1>Общий список</h1>
+        <form>
+        </form>
+    </div>
+
+    <div id="personalInfo">
+        <h1>Персональная информация</h1>
+        <form>
+        </form>
+    </div>
+
+    <div id="editMenu">
+        <h1>Редактировать информацию</h1>
+        <div id="buttonFormComtainer">
+            <button name='plantType1' type='button' id='plantType1'>Папоротник</button>
+            <button name='plantType2' type='button' id='plantType2'>Ель</button>
+        </div>    
+        <form name="edit">
+            <div id='commonContainer' style="display: none">
+                <label>Название: </label>
+                <input name='type' type='text' id='editNameField' value=''>
+                <br>
+                <label> Возраст: </label>
+                <input name='age' type='text' id='editAgeField' value=''>
+            </div>
+            <div id='fernContainer' style="display: none">
+                <label>Описание:</label>
+                <input name='desc' type='text' id='editDescriptionField' value=''>
+                <br>
+                <label>Ядовитый: </label>
+                <input name='poison' type='checkbox' id='editPoisonField' value=''>
+            </div>
+            <div id='spruceContainer' style="display: none">
+                <label>Место произрастания:</label>
+                <input name='area' type='text' id='editAreaField' value=''>
+                <br>
+                <label>Область применения: </label>
+                <input name='application' type='text' id='applicationField' value=''>
+                <br>
+            </div>
+            <input type='button' id='editElement' value='Ок'>
+        </form>
+    </div>
+
+
+    <script src="classes.js"></script>
+    <script src="script.js"></script>   
+</body>
+</html>

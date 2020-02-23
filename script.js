@@ -36,7 +36,6 @@ function printPlantsArray(){
         }
     });
     request.send();   
-    
 }
 
 function printPersonalInfo(i, plants){
@@ -186,7 +185,7 @@ document.getElementById("editElement").addEventListener("click", ()=>{
         switchDisplay("commonInfo");
         }
         else{
-                console.error("Статус запроса " + request.status);
+            console.error("Статус запроса " + request.status);
         }
     });  
 
@@ -206,77 +205,3 @@ document.getElementById("editElement").addEventListener("click", ()=>{
     } 
 });
 
-/*var xhr = new XMLHttpRequest();
-
-// 2. Конфигурируем его: GET-запрос на URL 'phones.json'
-xhr.open('GET', ' http://localhost:3000/posts/1', false);
-
-// 3. Отсылаем запрос
-xhr.send();
-
-// 4. Если код ответа сервера не 200, то это ошибка
-if (xhr.status != 200) {
-  // обработать ошибку
-  alert( xhr.status + ': ' + xhr.statusText ); // пример вывода: 404: Not Found
-} else {
-  // вывести результат
-  alert( xhr.responseText ); // responseText -- текст ответа.
-}*/
-//show();
-
-/*function show(){  
-            $.ajax({  
-                url: "http://localhost:3000/posts/1",  
-                type: "GET",
-                cache: false,  
-                success: function(obj){  
-                    console.log(obj);
-                    //$("#content").html(html);  
-                },
-                error: function(responseText){
-                    console.log(responseText);
-                }
-            });  
-        }  
-      
-        $(document).ready(function(){  
-            show();  
-            //setInterval('show()',1000);  
-        });  
-
-*/
-//	Данные для передачи на сервер например	id товаров и его количество
-//let id_product = 321;
-//let qty_product = 2;
- 
-
-
-/*
-
-
- // принцип	тот же самый что и у обычного POST	запроса 
-const request = new XMLHttpRequest();
-const url = "http://localhost:3000/posts";
-//const params = "id_product=" + id_product+ "&qty_product=" + qty_product;
- 
-//	Здесь нужно указать в каком формате мы будем принимать данные вот и все	отличие 
-request.responseType =	"json";
-request.open("POST", url, true);
-request.setRequestHeader("Content-type", "application/x-www-form-urlencoded");
- 
-request.addEventListener("readystatechange", () => {
- 
-    if (request.readyState === 4 && request.status === 200) {
-        let obj = request.response;
-       
-	console.log(obj);       
-	// Здесь мы можем обращаться к свойству объекта и получать	его значение
-	console.log(obj.id_product);
-	console.log(obj.qty_product);   
-	}
-});
-//console.log(plants[0]);
- 
-request.send("age=" + fern1.age+ "&name=" + fern1.name);
-
-*/
